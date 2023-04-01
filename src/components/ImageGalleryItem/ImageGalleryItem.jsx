@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import css from './ImageGalleryItem.module.css';
 import { Modal } from 'components/Modal/Modal';
-const backdrop = document.getElementById('a');
 
 export class ImageGalleryItem extends Component {
   state = {
