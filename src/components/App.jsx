@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { ImageGalleryItem } from './ImageGalleryItem/ImageGalleryItem';
+import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Searchbar } from './Searchbar/Searchbar';
 
 export class App extends Component {
@@ -16,7 +16,7 @@ export class App extends Component {
     return (
       <div>
         <Searchbar onGetValue={this.onGetValue} />
-        <ImageGalleryItem value={this.state.value} />
+        <ImageGallery value={this.state.value} />
       </div>
     );
   }
