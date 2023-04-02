@@ -29,7 +29,7 @@ export class ImageGallery extends Component {
     }
 
     if (prevProps.value !== value && this.state.page === 1) {
-      this.setState({ isLoading: true, page: 1 });
+      this.setState({ gallery: [], isLoading: true, page: 1 });
       this.onFetchInfo();
     }
 
